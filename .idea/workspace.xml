@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7f3f0a05-dcc8-42fb-9f6d-ac721d8c5205" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="JupyterTrust" id="5be9abb2-9f73-4824-9560-4091824c5e74" />
+  <component name="ProjectId" id="1tvwsixUhw4pgWX7huj9Dkqfthc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager" selected="Python.download_id">
+    <configuration name="download_id" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Binance_Futures_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/example/trade" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/example/trade/download_id.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="setup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Binance_Futures_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.download_id" />
+        <item itemvalue="Python.setup" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f3f0a05-dcc8-42fb-9f6d-ac721d8c5205" name="Default Changelist" comment="" />
+      <created>1623663079776</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623663079776</updated>
+      <workItem from="1623663081251" duration="31000" />
+      <workItem from="1623970733696" duration="831000" />
+      <workItem from="1623971569880" duration="951000" />
+      <workItem from="1623972559352" duration="554000" />
+      <workItem from="1623976397748" duration="1328000" />
+      <workItem from="1623977860996" duration="11000" />
+      <workItem from="1623977886997" duration="337000" />
+    </task>
+    <task id="LOCAL-00001" summary="-test">
+      <created>1623970809858</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623970809858</updated>
+    </task>
+    <task id="LOCAL-00002" summary="-test">
+      <created>1623970833347</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623970833347</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="-test" />
+    <option name="LAST_COMMIT_MESSAGE" value="-test" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="507" y="92" key="CommitChangelistDialog2" timestamp="1623970833203">
+      <screen x="0" y="25" width="1920" height="968" />
+    </state>
+    <state x="507" y="92" key="CommitChangelistDialog2/0.25.1920.968@0.25.1920.968" timestamp="1623970833203" />
+    <state x="743" y="252" key="FileChooserDialogImpl" timestamp="1623971399466">
+      <screen x="0" y="25" width="1920" height="966" />
+    </state>
+    <state x="743" y="252" key="FileChooserDialogImpl/0.25.1920.966@0.25.1920.966" timestamp="1623971399466" />
+    <state x="818" y="391" width="691" height="232" key="Github.ShareDialog" timestamp="1623978233001">
+      <screen x="0" y="25" width="1920" height="966" />
+    </state>
+    <state x="818" y="391" width="691" height="232" key="Github.ShareDialog/0.25.1920.966@0.25.1920.966" timestamp="1623978233001" />
+    <state width="1659" height="662" key="GridCell.Tab.0.bottom" timestamp="1623977854708">
+      <screen x="0" y="25" width="1920" height="966" />
+    </state>
+    <state width="1659" height="662" key="GridCell.Tab.0.bottom/0.25.1920.966@0.25.1920.966" timestamp="1623977854708" />
+    <state width="1445" height="248" key="GridCell.Tab.0.bottom/0.25.1920.968@0.25.1920.968" timestamp="1623971872447" />
+    <state width="1659" height="662" key="GridCell.Tab.0.center" timestamp="1623977854707">
+      <screen x="0" y="25" width="1920" height="966" />
+    </state>
+    <state width="1659" height="662" key="GridCell.Tab.0.center/0.25.1920.966@0.25.1920.966" timestamp="1623977854707" />
+    <state width="1445" height="248" key="GridCell.Tab.0.center/0.25.1920.968@0.25.1920.968" timestamp="1623971872446" />
+    <state width="1659" height="662" key="GridCell.Tab.0.left" timestamp="1623977854707">
+      <screen x="0" y="25" width="1920" height="966" />
+    </state>
+    <state width="1659" height="662" key="GridCell.Tab.0.left/0.25.1920.966@0.25.1920.966" timestamp="1623977854707" />
+    <state width="1445" height="248" key="GridCell.Tab.0.left/0.25.1920.968@0.25.1920.968" timestamp="1623971872445" />
+    <state width="1659" height="662" key="GridCell.Tab.0.right" timestamp="1623977854707">
+      <screen x="0" y="25" width="1920" height="966" />
+    </state>
+    <state width="1659" height="662" key="GridCell.Tab.0.right/0.25.1920.966@0.25.1920.966" timestamp="1623977854707" />
+    <state width="1445" height="248" key="GridCell.Tab.0.right/0.25.1920.968@0.25.1920.968" timestamp="1623971872446" />
+    <state width="1659" height="307" key="GridCell.Tab.1.bottom" timestamp="1623977854701">
+      <screen x="0" y="25" width="1920" height="966" />
+    </state>
+    <state width="1659" height="307" key="GridCell.Tab.1.bottom/0.25.1920.966@0.25.1920.966" timestamp="1623977854701" />
+    <state width="1445" height="307" key="GridCell.Tab.1.bottom/0.25.1920.968@0.25.1920.968" timestamp="1623971808794" />
+    <state width="1659" height="307" key="GridCell.Tab.1.center" timestamp="1623977854700">
+      <screen x="0" y="25" width="1920" height="966" />
+    </state>
+    <state width="1659" height="307" key="GridCell.Tab.1.center/0.25.1920.966@0.25.1920.966" timestamp="1623977854700" />
+    <state width="1445" height="307" key="GridCell.Tab.1.center/0.25.1920.968@0.25.1920.968" timestamp="1623971808794" />
+    <state width="1659" height="307" key="GridCell.Tab.1.left" timestamp="1623977854700">
+      <screen x="0" y="25" width="1920" height="966" />
+    </state>
+    <state width="1659" height="307" key="GridCell.Tab.1.left/0.25.1920.966@0.25.1920.966" timestamp="1623977854700" />
+    <state width="1445" height="307" key="GridCell.Tab.1.left/0.25.1920.968@0.25.1920.968" timestamp="1623971808793" />
+    <state width="1659" height="307" key="GridCell.Tab.1.right" timestamp="1623977854701">
+      <screen x="0" y="25" width="1920" height="966" />
+    </state>
+    <state width="1659" height="307" key="GridCell.Tab.1.right/0.25.1920.966@0.25.1920.966" timestamp="1623977854701" />
+    <state width="1445" height="307" key="GridCell.Tab.1.right/0.25.1920.968@0.25.1920.968" timestamp="1623971808794" />
+    <state x="416" y="128" key="SettingsEditor" timestamp="1623977869985">
+      <screen x="0" y="25" width="1920" height="966" />
+    </state>
+    <state x="416" y="128" key="SettingsEditor/0.25.1920.966@0.25.1920.966" timestamp="1623977869985" />
+    <state x="416" y="129" key="SettingsEditor/0.25.1920.968@0.25.1920.968" timestamp="1623970918014" />
+    <state x="555" y="230" key="Vcs.Push.Dialog.v2" timestamp="1623972305595">
+      <screen x="0" y="25" width="1920" height="966" />
+    </state>
+    <state x="555" y="230" key="Vcs.Push.Dialog.v2/0.25.1920.966@0.25.1920.966" timestamp="1623972305595" />
+    <state x="600" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1623976398827">
+      <screen x="0" y="25" width="1920" height="966" />
+    </state>
+    <state x="600" y="321" key="com.intellij.ide.util.TipDialog/0.25.1920.966@0.25.1920.966" timestamp="1623976398827" />
+    <state x="600" y="322" key="com.intellij.ide.util.TipDialog/0.25.1920.968@0.25.1920.968" timestamp="1623970737468" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Binance_Futures_python$setup.coverage" NAME="setup Coverage Results" MODIFIED="1623971808775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Binance_Futures_python$download_id.coverage" NAME="download_id Coverage Results" MODIFIED="1623977065610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/example/trade" />
+  </component>
+</project>
