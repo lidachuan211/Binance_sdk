@@ -25,8 +25,8 @@ from binance_f.constant.test import *
 from binance_f.base.printobject import *
 from binance_f.model.constant import *
 
-g_api_key = '2dikJ7QGkZOOcsymXw3r1rHpRHsMgl7UsDsVCg3AS7WU9QgtuoUA2kX2XtWLE6Pj'
-g_secret_key = 'LHBYf2ZKI6cmpbOtxfxpd79UIGlDpE6wvrWWMBAgrxImtS9D4NGht72ieRKXvFim' 
+g_api_key = 'TYmMutnyFdf5ItclXqUYOxJku3dpXY7f1BxF4G38S7bmcUOLNcLDuKK782TpFbku'
+g_secret_key = 'd1Dgo3wI0JXGT31QQnKqLpoMiHTVf8Ep1vqU0s6xMBMoimOscMOb0PokPXNdfrO2'
 request_client = RequestClient(api_key=g_api_key, secret_key=g_secret_key)
 
 def geterate_periods(start='2020-01-01 00:00:00', end='2021-04-05 00:00:00', days=15):
