@@ -12,8 +12,8 @@ import os
 
 data_path = "https://api.binance.com/sapi/v1/downloadLink"
 
-key = "自己的key"
-secret = "自己的secret"
+key = "2dikJ7QGkZOOcsymXw3r1rHpRHsMgl7UsDsVCg3AS7WU9QgtuoUA2kX2XtWLE6Pj"
+secret = "LHBYf2ZKI6cmpbOtxfxpd79UIGlDpE6wvrWWMBAgrxImtS9D4NGht72ieRKXvFim"
 
 def sign(params:dict,secret:str):
     query = parse.urlencode(sorted(params.items()))
@@ -54,7 +54,7 @@ def download(item):
     return f'{filename} download is finished.'
 
 def get_exists_files():
-    for _, _, files in os.walk('/home/data'):  #下载的文件存放路径文件夹
+    for _, _, files in os.walk('./data'):  #下载的文件存放路径文件夹
         pre_filenames = [os.path.splitext(os.path.splitext(filename)[0])[0] for filename in files]
         return pre_filenames
 
@@ -117,12 +117,12 @@ def worker(q_list):
 
 if __name__ == "__main__":
     queue_list = Queue()
-    csv_file = '/home/result_id.csv'  # 上个文件指定的文件生成路径
+    csv_file = './result_id.csv'  # 上个文件指定的文件生成路径
     data_path = "https://api.binance.com/sapi/v1/downloadLink"
     headers = {
             "Content-Type": "application/x-www-form-urlencoded",
             "Accept": "application/json",
-            "X-MBX-APIKEY": '自己的key'
+            "X-MBX-APIKEY": key
         }
 
     t1 = Thread(target=master,args=(csv_file,queue_list,data_path,headers))

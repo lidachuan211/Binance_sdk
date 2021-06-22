@@ -42,8 +42,10 @@ class RestApiRequestImpl(object):
         request = RestApiRequest()
         request.method = "POST"
         request.host = "https://api2.binance.com"
-        builder.put_url("timestamp", str(get_current_timestamp() - 1000))
+        builder.put_url("timestamp", str(get_current_timestamp() + 60000))
+        builder.put_url("recvWindow", 60000)
         create_signature(self.__secret_key, builder)
+
         request.header.update({'Content-Type': 'application/json'})
         request.header.update({"X-MBX-APIKEY": self.__api_key})
         request.post_body = builder.post_map

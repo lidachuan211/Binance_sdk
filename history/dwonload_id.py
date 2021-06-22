@@ -1,11 +1,3 @@
-'''
-Author: your name
-Date: 2021-06-16 07:51:48
-LastEditTime: 2021-06-18 06:57:23
-LastEditors: Please set LastEditors
-Description: In User Settings Edit
-FilePath: /Binance_Futures_python/history/download_id.py
-'''
 import hmac
 import hashlib
 from urllib import parse
@@ -16,18 +8,40 @@ import pandas as pd
 import numpy as np
 import os
 
-id_path = "https://api2.binance.com/sapi/v1/futuresHistDataId"
-link_path = "https://api2.binance.com/sapi/v1/downloadLink"
+key = "2dikJ7QGkZOOcsymXw3r1rHpRHsMgl7UsDsVCg3AS7WU9QgtuoUA2kX2XtWLE6Pj"
+secret = "LHBYf2ZKI6cmpbOtxfxpd79UIGlDpE6wvrWWMBAgrxImtS9D4NGht72ieRKXvFim"
+id_path = "https://api.binance.com/sapi/v1/futuresHistDataId"
+link_path = "https://api.binance.com/sapi/v1/downloadLink"
 
 query_symbols = ['BTCUSDT','ETHUSDT','LTCUSDT','EOSUSDT']
-from binance_f import RequestClient
-from binance_f.constant.test import *
-from binance_f.base.printobject import *
-from binance_f.model.constant import *
 
-g_api_key = 'TYmMutnyFdf5ItclXqUYOxJku3dpXY7f1BxF4G38S7bmcUOLNcLDuKK782TpFbku'
-g_secret_key = 'd1Dgo3wI0JXGT31QQnKqLpoMiHTVf8Ep1vqU0s6xMBMoimOscMOb0PokPXNdfrO2'
-request_client = RequestClient(api_key=g_api_key, secret_key=g_secret_key)
+def sign(params:dict,secret:str):
+    query = parse.urlencode(sorted(params.items()))
+    secret = secret.encode()
+    signature = hmac.new(secret, query.encode("utf-8"), hashlib.sha256).hexdigest()
+    return signature
+
+headers = {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Accept": "application/json",
+            "X-MBX-APIKEY": key
+        }
+
+def get_query_path(path, params):
+    timestamp = int(time.time()*1000)
+    params["timestamp"] = timestamp+60000
+    query = parse.urlencode(sorted(params.items()))
+    signature = sign(params, secret)
+    query += "&signature={}".format(signature)
+    query_path = path + '?' + query
+    return query_path
+
+def request_post(path, headers):
+    response = requests.request('POST', path, headers=headers)
+    return response
+def request_get(path, headers):
+    response = requests.request('GET', path, headers=headers)
+    return response
 
 def geterate_periods(start='2020-01-01 00:00:00', end='2021-04-05 00:00:00', days=15):
 
@@ -66,7 +80,15 @@ def run_id(csv_file, days):
             while time_start < int(time.mktime(datetime.today().timetuple()))*1000:
                 start = time_start
                 end = start + days * 24 * 60 * 60 * 1000
-                ret = request_client.get_download_id(symbol,start,end,data_type)
+                params = {
+                'symbol': symbol,
+                'startTime': str(start),
+                'endTime': str(end),
+                'dataType': data_type,
+                'recvWindow':60000
+                }
+                query_path_ = get_query_path(id_path, params)
+                ret = request_post(query_path_, headers)
                 print(ret.text)
                 if ret.status_code == 200:
                     ret_id = ret.json()['id']
@@ -86,6 +108,6 @@ def run_id(csv_file, days):
                     time.sleep(1800)
 
 if __name__ == '__main__':
-    csv_file = './data/result_id.csv'
+    csv_file = './result_id.csv'
     days = 7
     run_id(csv_file, days)
