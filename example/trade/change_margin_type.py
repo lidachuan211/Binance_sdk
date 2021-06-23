@@ -1,3 +1,11 @@
+'''
+Author: your name
+Date: 2021-06-23 07:52:32
+LastEditTime: 2021-06-23 08:03:49
+LastEditors: your name
+Description: In User Settings Edit
+FilePath: /binance_sdk/example/trade/change_margin_type.py
+'''
 from binance_f import RequestClient
 from binance_f.constant.test import *
 from binance_f.base.printobject import *

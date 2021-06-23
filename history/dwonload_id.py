@@ -12,8 +12,9 @@ key = "2dikJ7QGkZOOcsymXw3r1rHpRHsMgl7UsDsVCg3AS7WU9QgtuoUA2kX2XtWLE6Pj"
 secret = "LHBYf2ZKI6cmpbOtxfxpd79UIGlDpE6wvrWWMBAgrxImtS9D4NGht72ieRKXvFim"
 id_path = "https://api.binance.com/sapi/v1/futuresHistDataId"
 link_path = "https://api.binance.com/sapi/v1/downloadLink"
-
-query_symbols = ['BTCUSDT','ETHUSDT','LTCUSDT','EOSUSDT']
+from binance_d import RequestClient
+request_client = RequestClient(api_key=key, secret_key=secret)
+query_symbols = ['BTCUSDT']
 
 def sign(params:dict,secret:str):
     query = parse.urlencode(sorted(params.items()))
@@ -28,8 +29,8 @@ headers = {
         }
 
 def get_query_path(path, params):
-    timestamp = int(time.time()*1000)
-    params["timestamp"] = timestamp+60000
+    timestamp = request_client.get_servertime()
+    params["timestamp"] = timestamp
     query = parse.urlencode(sorted(params.items()))
     signature = sign(params, secret)
     query += "&signature={}".format(signature)

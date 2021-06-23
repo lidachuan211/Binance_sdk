@@ -14,7 +14,8 @@ data_path = "https://api.binance.com/sapi/v1/downloadLink"
 
 key = "2dikJ7QGkZOOcsymXw3r1rHpRHsMgl7UsDsVCg3AS7WU9QgtuoUA2kX2XtWLE6Pj"
 secret = "LHBYf2ZKI6cmpbOtxfxpd79UIGlDpE6wvrWWMBAgrxImtS9D4NGht72ieRKXvFim"
-
+from binance_d import RequestClient
+request_client = RequestClient(api_key=key, secret_key=secret)
 def sign(params:dict,secret:str):
     query = parse.urlencode(sorted(params.items()))
     secret = secret.encode()
@@ -22,8 +23,7 @@ def sign(params:dict,secret:str):
     return signature
 
 def query_path(path, params):
-    timestamp = int(time()*1000)
-    params["timestamp"] = timestamp
+    params["timestamp"] = request_client.get_servertime()
     query = parse.urlencode(sorted(params.items()))
     signature = sign(params, secret)
     query += "&signature={}".format(signature)
@@ -48,13 +48,13 @@ def get_download_url(link_id, data_path, headers):
 def download(item):
     filename, url = item
     data = requests.get(url)
-    file_path = '/home/data/' + filename + '.tar.gz'   #下载的文件存放路径
+    file_path = './data/' + filename + '.tar.gz'   #下载的文件存放路径
     with open(file_path,'wb') as fp:
         fp.write(data.content)
     return f'{filename} download is finished.'
 
 def get_exists_files():
-    for _, _, files in os.walk('./data'):  #下载的文件存放路径文件夹
+    for _, _, files in os.walk('./data/'):  #下载的文件存放路径文件夹
         pre_filenames = [os.path.splitext(os.path.splitext(filename)[0])[0] for filename in files]
         return pre_filenames
 
@@ -79,7 +79,8 @@ def master(csv_file, q_list, data_path, headers):
                 if link is not None:
                     used_ids.add(id_value)
                     print('filename',filename)
-                    q_list.put((filename, link))
+                    download((filename, link))
+                    # q_list.put((filename, link))
         if len(used_ids) == pre_length:
             count += 1
         if count >= 5:
